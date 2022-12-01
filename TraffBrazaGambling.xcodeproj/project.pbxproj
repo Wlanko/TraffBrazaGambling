@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB1D214529393354006A211D /* TraffBrazaGamblingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1D214429393354006A211D /* TraffBrazaGamblingApp.swift */; };
+		BB1D214729393354006A211D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1D214629393354006A211D /* ContentView.swift */; };
+		BB1D214929393355006A211D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB1D214829393355006A211D /* Assets.xcassets */; };
+		BB1D214C29393355006A211D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB1D214B29393355006A211D /* Preview Assets.xcassets */; };
+		BB1D215629393355006A211D /* TraffBrazaGamblingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1D215529393355006A211D /* TraffBrazaGamblingTests.swift */; };
+		BB1D216029393355006A211D /* TraffBrazaGamblingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1D215F29393355006A211D /* TraffBrazaGamblingUITests.swift */; };
+		BB1D216229393355006A211D /* TraffBrazaGamblingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1D216129393355006A211D /* TraffBrazaGamblingUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB1D215229393355006A211D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB1D213929393353006A211D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB1D214029393354006A211D;
+			remoteInfo = TraffBrazaGambling;
+		};
+		BB1D215C29393355006A211D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB1D213929393353006A211D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB1D214029393354006A211D;
+			remoteInfo = TraffBrazaGambling;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BB1D214129393354006A211D /* TraffBrazaGambling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TraffBrazaGambling.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB1D214429393354006A211D /* TraffBrazaGamblingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraffBrazaGamblingApp.swift; sourceTree = "<group>"; };
+		BB1D214629393354006A211D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BB1D214829393355006A211D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB1D214B29393355006A211D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BB1D215129393355006A211D /* TraffBrazaGamblingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TraffBrazaGamblingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB1D215529393355006A211D /* TraffBrazaGamblingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraffBrazaGamblingTests.swift; sourceTree = "<group>"; };
+		BB1D215B29393355006A211D /* TraffBrazaGamblingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TraffBrazaGamblingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB1D215F29393355006A211D /* TraffBrazaGamblingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraffBrazaGamblingUITests.swift; sourceTree = "<group>"; };
+		BB1D216129393355006A211D /* TraffBrazaGamblingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraffBrazaGamblingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB1D213E29393354006A211D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB1D214E29393355006A211D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB1D215829393355006A211D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB1D213829393353006A211D = {
+			isa = PBXGroup;
+			children = (
+				BB1D214329393354006A211D /* TraffBrazaGambling */,
+				BB1D215429393355006A211D /* TraffBrazaGamblingTests */,
+				BB1D215E29393355006A211D /* TraffBrazaGamblingUITests */,
+				BB1D214229393354006A211D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB1D214229393354006A211D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB1D214129393354006A211D /* TraffBrazaGambling.app */,
+				BB1D215129393355006A211D /* TraffBrazaGamblingTests.xctest */,
+				BB1D215B29393355006A211D /* TraffBrazaGamblingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB1D214329393354006A211D /* TraffBrazaGambling */ = {
+			isa = PBXGroup;
+			children = (
+				BB1D214429393354006A211D /* TraffBrazaGamblingApp.swift */,
+				BB1D214629393354006A211D /* ContentView.swift */,
+				BB1D214829393355006A211D /* Assets.xcassets */,
+				BB1D214A29393355006A211D /* Preview Content */,
+			);
+			path = TraffBrazaGambling;
+			sourceTree = "<group>";
+		};
+		BB1D214A29393355006A211D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BB1D214B29393355006A211D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BB1D215429393355006A211D /* TraffBrazaGamblingTests */ = {
+			isa = PBXGroup;
+			children = (
+				BB1D215529393355006A211D /* TraffBrazaGamblingTests.swift */,
+			);
+			path = TraffBrazaGamblingTests;
+			sourceTree = "<group>";
+		};
+		BB1D215E29393355006A211D /* TraffBrazaGamblingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BB1D215F29393355006A211D /* TraffBrazaGamblingUITests.swift */,
+				BB1D216129393355006A211D /* TraffBrazaGamblingUITestsLaunchTests.swift */,
+			);
+			path = TraffBrazaGamblingUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB1D214029393354006A211D /* TraffBrazaGambling */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB1D216529393355006A211D /* Build configuration list for PBXNativeTarget "TraffBrazaGambling" */;
+			buildPhases = (
+				BB1D213D29393354006A211D /* Sources */,
+				BB1D213E29393354006A211D /* Frameworks */,
+				BB1D213F29393354006A211D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TraffBrazaGambling;
+			productName = TraffBrazaGambling;
+			productReference = BB1D214129393354006A211D /* TraffBrazaGambling.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB1D215029393355006A211D /* TraffBrazaGamblingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB1D216829393355006A211D /* Build configuration list for PBXNativeTarget "TraffBrazaGamblingTests" */;
+			buildPhases = (
+				BB1D214D29393355006A211D /* Sources */,
+				BB1D214E29393355006A211D /* Frameworks */,
+				BB1D214F29393355006A211D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB1D215329393355006A211D /* PBXTargetDependency */,
+			);
+			name = TraffBrazaGamblingTests;
+			productName = TraffBrazaGamblingTests;
+			productReference = BB1D215129393355006A211D /* TraffBrazaGamblingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BB1D215A29393355006A211D /* TraffBrazaGamblingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB1D216B29393355006A211D /* Build configuration list for PBXNativeTarget "TraffBrazaGamblingUITests" */;
+			buildPhases = (
+				BB1D215729393355006A211D /* Sources */,
+				BB1D215829393355006A211D /* Frameworks */,
+				BB1D215929393355006A211D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB1D215D29393355006A211D /* PBXTargetDependency */,
+			);
+			name = TraffBrazaGamblingUITests;
+			productName = TraffBrazaGamblingUITests;
+			productReference = BB1D215B29393355006A211D /* TraffBrazaGamblingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB1D213929393353006A211D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					BB1D214029393354006A211D = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					BB1D215029393355006A211D = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = BB1D214029393354006A211D;
+					};
+					BB1D215A29393355006A211D = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = BB1D214029393354006A211D;
+					};
+				};
+			};
+			buildConfigurationList = BB1D213C29393353006A211D /* Build configuration list for PBXProject "TraffBrazaGambling" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB1D213829393353006A211D;
+			productRefGroup = BB1D214229393354006A211D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB1D214029393354006A211D /* TraffBrazaGambling */,
+				BB1D215029393355006A211D /* TraffBrazaGamblingTests */,
+				BB1D215A29393355006A211D /* TraffBrazaGamblingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB1D213F29393354006A211D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB1D214C29393355006A211D /* Preview Assets.xcassets in Resources */,
+				BB1D214929393355006A211D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB1D214F29393355006A211D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB1D215929393355006A211D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB1D213D29393354006A211D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB1D214729393354006A211D /* ContentView.swift in Sources */,
+				BB1D214529393354006A211D /* TraffBrazaGamblingApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB1D214D29393355006A211D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB1D215629393355006A211D /* TraffBrazaGamblingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB1D215729393355006A211D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB1D216229393355006A211D /* TraffBrazaGamblingUITestsLaunchTests.swift in Sources */,
+				BB1D216029393355006A211D /* TraffBrazaGamblingUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB1D215329393355006A211D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB1D214029393354006A211D /* TraffBrazaGambling */;
+			targetProxy = BB1D215229393355006A211D /* PBXContainerItemProxy */;
+		};
+		BB1D215D29393355006A211D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB1D214029393354006A211D /* TraffBrazaGambling */;
+			targetProxy = BB1D215C29393355006A211D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BB1D216329393355006A211D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BB1D216429393355006A211D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB1D216629393355006A211D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TraffBrazaGambling/Preview Content\"";
+				DEVELOPMENT_TEAM = 47J4D692KF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Wlanko.TraffBrazaGambling;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BB1D216729393355006A211D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TraffBrazaGambling/Preview Content\"";
+				DEVELOPMENT_TEAM = 47J4D692KF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Wlanko.TraffBrazaGambling;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BB1D216929393355006A211D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 47J4D692KF;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Wlanko.TraffBrazaGamblingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TraffBrazaGambling.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TraffBrazaGambling";
+			};
+			name = Debug;
+		};
+		BB1D216A29393355006A211D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 47J4D692KF;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Wlanko.TraffBrazaGamblingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TraffBrazaGambling.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TraffBrazaGambling";
+			};
+			name = Release;
+		};
+		BB1D216C29393355006A211D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 47J4D692KF;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Wlanko.TraffBrazaGamblingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TraffBrazaGambling;
+			};
+			name = Debug;
+		};
+		BB1D216D29393355006A211D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 47J4D692KF;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Wlanko.TraffBrazaGamblingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TraffBrazaGambling;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB1D213C29393353006A211D /* Build configuration list for PBXProject "TraffBrazaGambling" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB1D216329393355006A211D /* Debug */,
+				BB1D216429393355006A211D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB1D216529393355006A211D /* Build configuration list for PBXNativeTarget "TraffBrazaGambling" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB1D216629393355006A211D /* Debug */,
+				BB1D216729393355006A211D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB1D216829393355006A211D /* Build configuration list for PBXNativeTarget "TraffBrazaGamblingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB1D216929393355006A211D /* Debug */,
+				BB1D216A29393355006A211D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB1D216B29393355006A211D /* Build configuration list for PBXNativeTarget "TraffBrazaGamblingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB1D216C29393355006A211D /* Debug */,
+				BB1D216D29393355006A211D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB1D213929393353006A211D /* Project object */;
+}
