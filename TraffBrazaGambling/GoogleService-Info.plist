@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>201088450887-feanjsbqdur4o4jq8o39kh47flpcfgf9.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.201088450887-feanjsbqdur4o4jq8o39kh47flpcfgf9</string>
+	<key>API_KEY</key>
+	<string>AIzaSyD2flzwq2gt8TbUB1zj1_EA04j1s6T2iR4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>201088450887</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Wlanko.TraffBrazaGambling</string>
+	<key>PROJECT_ID</key>
+	<string>traffbrazagambling</string>
+	<key>STORAGE_BUCKET</key>
+	<string>traffbrazagambling.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:201088450887:ios:7048f04b39ebd26bfd8c62</string>
+</dict>
+</plist>
