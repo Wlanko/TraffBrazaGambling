@@ -13,16 +13,9 @@ struct SettingsView: View {
     var body: some View {
         NavigationView {
             List{
-                Section{
-                    ForEach(settingsViewModel.settingsItem){ item in
-                        if Int(item.id)! < settingsViewModel.settingsItem.count - 1 {
-                            SettingsItemCell(item: item)
-                        }
-                    }
-                }
-                Section{
-                    ForEach(settingsViewModel.settingsItem){ item in
-                        if Int(item.id)! > settingsViewModel.settingsItem.count - 2 {
+                ForEach(settingsViewModel.settingItems, id: \.count) { section in
+                    Section{
+                        ForEach(section) { item in
                             SettingsItemCell(item: item)
                         }
                     }

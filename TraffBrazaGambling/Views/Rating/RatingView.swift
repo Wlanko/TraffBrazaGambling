@@ -15,6 +15,7 @@ struct RatingView: View {
             List(firebaseManager.users, id: \.id){ userInfo in
                 PlayerRatingCell(userInfo: userInfo)
             }
+            .navigationBarTitle("Player rating")
         }
         .onAppear(){
             self.firebaseManager.getUsersRatingList()

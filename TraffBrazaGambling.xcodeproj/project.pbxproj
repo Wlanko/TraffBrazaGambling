@@ -19,6 +19,8 @@
 		BB260DEA293C25B400EBBF4F /* SettingsItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB260DE9293C25B400EBBF4F /* SettingsItemCell.swift */; };
 		BB260DEC293C25CF00EBBF4F /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB260DEB293C25CF00EBBF4F /* SettingsViewModel.swift */; };
 		BB260DEE293C25E400EBBF4F /* SettingsItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB260DED293C25E300EBBF4F /* SettingsItemModel.swift */; };
+		BB3403D52940E39A00340F18 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3403D42940E39A00340F18 /* GameViewModel.swift */; };
+		BB3403D72940E41700340F18 /* RouletteItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3403D62940E41700340F18 /* RouletteItemModel.swift */; };
 		BB4FECF3293BB65D008AF0CD /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4FECF2293BB65D008AF0CD /* SettingsView.swift */; };
 		BB4FECF5293BB66B008AF0CD /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4FECF4293BB66B008AF0CD /* RatingView.swift */; };
 		BB4FECF7293BB675008AF0CD /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4FECF6293BB675008AF0CD /* GameView.swift */; };
@@ -67,6 +69,8 @@
 		BB260DE9293C25B400EBBF4F /* SettingsItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsItemCell.swift; sourceTree = "<group>"; };
 		BB260DEB293C25CF00EBBF4F /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		BB260DED293C25E300EBBF4F /* SettingsItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsItemModel.swift; sourceTree = "<group>"; };
+		BB3403D42940E39A00340F18 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		BB3403D62940E41700340F18 /* RouletteItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouletteItemModel.swift; sourceTree = "<group>"; };
 		BB4FECF2293BB65D008AF0CD /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		BB4FECF4293BB66B008AF0CD /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		BB4FECF6293BB675008AF0CD /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
@@ -177,11 +181,20 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
+		BB3403D32940E37D00340F18 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				BB4FECF6293BB675008AF0CD /* GameView.swift */,
+				BB3403D42940E39A00340F18 /* GameViewModel.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
 		BB4FECF1293BB624008AF0CD /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				BB1D214629393354006A211D /* MainView.swift */,
-				BB4FECF6293BB675008AF0CD /* GameView.swift */,
+				BB3403D32940E37D00340F18 /* Game */,
 				BB260DE8293C259D00EBBF4F /* Settings */,
 				BB4FECF8293BE837008AF0CD /* Rating */,
 				BB971A66293943330085CD10 /* LogInAndRegiastration */,
@@ -212,6 +225,7 @@
 			children = (
 				BB971A6C29394B030085CD10 /* UserModel.swift */,
 				BB260DED293C25E300EBBF4F /* SettingsItemModel.swift */,
+				BB3403D62940E41700340F18 /* RouletteItemModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -368,8 +382,10 @@
 				BB971A7029397FA60085CD10 /* TextFieldPattern.swift in Sources */,
 				BB4FECF3293BB65D008AF0CD /* SettingsView.swift in Sources */,
 				BB971A6A293947CC0085CD10 /* FirebaseManager.swift in Sources */,
+				BB3403D52940E39A00340F18 /* GameViewModel.swift in Sources */,
 				BB4FECF5293BB66B008AF0CD /* RatingView.swift in Sources */,
 				BB4FECF7293BB675008AF0CD /* GameView.swift in Sources */,
+				BB3403D72940E41700340F18 /* RouletteItemModel.swift in Sources */,
 				BB4FECFA293BE868008AF0CD /* PlayerRatingCell.swift in Sources */,
 				BB971A68293943C90085CD10 /* LogInView.swift in Sources */,
 				BB097EC3293ABC7A000201BA /* RegistrationView.swift in Sources */,
