@@ -23,6 +23,12 @@ struct PlayerRatingCell: View {
             Text("\(userInfo.balance)")
                 .font(.system(size: 30))
                 .foregroundColor(.yellow)
+                //.padding(.trailing, 10)
+            Image(systemName: "bitcoinsign.circle")
+                .resizable()
+                .scaledToFill()
+                .frame(width: 30, height: 30)
+                .foregroundColor(.yellow)
                 .padding(.trailing, 10)
         }
     }
@@ -30,7 +36,7 @@ struct PlayerRatingCell: View {
 
 struct PlayerRatingCell_Previews: PreviewProvider {
     static var previews: some View {
-        PlayerRatingCell(userInfo: UserInfo(id: "someId", name: "Name", balance: 2000))
+        PlayerRatingCell(userInfo: UserInfo(id: "someId", name: "Name", balance: 2000, gamesPlayed: 0, gamesWon: 0))
             .previewLayout(.fixed(width: 300, height: 70))
     }
 }

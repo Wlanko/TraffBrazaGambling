@@ -21,6 +21,9 @@
 		BB260DEE293C25E400EBBF4F /* SettingsItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB260DED293C25E300EBBF4F /* SettingsItemModel.swift */; };
 		BB3403D52940E39A00340F18 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3403D42940E39A00340F18 /* GameViewModel.swift */; };
 		BB3403D72940E41700340F18 /* RouletteItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3403D62940E41700340F18 /* RouletteItemModel.swift */; };
+		BB3403D929421BBD00340F18 /* GameBetPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3403D829421BBD00340F18 /* GameBetPicker.swift */; };
+		BB3403DB29421F6700340F18 /* RouletteItemPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3403DA29421F6700340F18 /* RouletteItemPattern.swift */; };
+		BB3403DD2942410C00340F18 /* BetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3403DC2942410C00340F18 /* BetModel.swift */; };
 		BB4FECF3293BB65D008AF0CD /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4FECF2293BB65D008AF0CD /* SettingsView.swift */; };
 		BB4FECF5293BB66B008AF0CD /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4FECF4293BB66B008AF0CD /* RatingView.swift */; };
 		BB4FECF7293BB675008AF0CD /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4FECF6293BB675008AF0CD /* GameView.swift */; };
@@ -71,6 +74,9 @@
 		BB260DED293C25E300EBBF4F /* SettingsItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsItemModel.swift; sourceTree = "<group>"; };
 		BB3403D42940E39A00340F18 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		BB3403D62940E41700340F18 /* RouletteItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouletteItemModel.swift; sourceTree = "<group>"; };
+		BB3403D829421BBD00340F18 /* GameBetPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBetPicker.swift; sourceTree = "<group>"; };
+		BB3403DA29421F6700340F18 /* RouletteItemPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouletteItemPattern.swift; sourceTree = "<group>"; };
+		BB3403DC2942410C00340F18 /* BetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetModel.swift; sourceTree = "<group>"; };
 		BB4FECF2293BB65D008AF0CD /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		BB4FECF4293BB66B008AF0CD /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		BB4FECF6293BB675008AF0CD /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
@@ -138,8 +144,8 @@
 				BB971A69293947CC0085CD10 /* FirebaseManager.swift */,
 				BB4FECF1293BB624008AF0CD /* Views */,
 				BB971A6B29394AEC0085CD10 /* Models */,
-				BB1D214A29393355006A211D /* Preview Content */,
 				BB971A6E29397F6E0085CD10 /* ViewElementPatterns */,
+				BB1D214A29393355006A211D /* Preview Content */,
 				BB1D216E29393AF3006A211D /* GoogleService-Info.plist */,
 				BB1D214829393355006A211D /* Assets.xcassets */,
 			);
@@ -186,6 +192,8 @@
 			children = (
 				BB4FECF6293BB675008AF0CD /* GameView.swift */,
 				BB3403D42940E39A00340F18 /* GameViewModel.swift */,
+				BB3403D829421BBD00340F18 /* GameBetPicker.swift */,
+				BB3403DA29421F6700340F18 /* RouletteItemPattern.swift */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -226,6 +234,7 @@
 				BB971A6C29394B030085CD10 /* UserModel.swift */,
 				BB260DED293C25E300EBBF4F /* SettingsItemModel.swift */,
 				BB3403D62940E41700340F18 /* RouletteItemModel.swift */,
+				BB3403DC2942410C00340F18 /* BetModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -382,6 +391,7 @@
 				BB971A7029397FA60085CD10 /* TextFieldPattern.swift in Sources */,
 				BB4FECF3293BB65D008AF0CD /* SettingsView.swift in Sources */,
 				BB971A6A293947CC0085CD10 /* FirebaseManager.swift in Sources */,
+				BB3403D929421BBD00340F18 /* GameBetPicker.swift in Sources */,
 				BB3403D52940E39A00340F18 /* GameViewModel.swift in Sources */,
 				BB4FECF5293BB66B008AF0CD /* RatingView.swift in Sources */,
 				BB4FECF7293BB675008AF0CD /* GameView.swift in Sources */,
@@ -391,10 +401,12 @@
 				BB097EC3293ABC7A000201BA /* RegistrationView.swift in Sources */,
 				BB260DEC293C25CF00EBBF4F /* SettingsViewModel.swift in Sources */,
 				BB260DEE293C25E400EBBF4F /* SettingsItemModel.swift in Sources */,
+				BB3403DB29421F6700340F18 /* RouletteItemPattern.swift in Sources */,
 				BB1D214729393354006A211D /* MainView.swift in Sources */,
 				BB260DEA293C25B400EBBF4F /* SettingsItemCell.swift in Sources */,
 				BB971A6D29394B030085CD10 /* UserModel.swift in Sources */,
 				BB1D214529393354006A211D /* TraffBrazaGamblingApp.swift in Sources */,
+				BB3403DD2942410C00340F18 /* BetModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

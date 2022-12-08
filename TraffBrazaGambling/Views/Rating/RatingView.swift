@@ -16,6 +16,7 @@ struct RatingView: View {
                 PlayerRatingCell(userInfo: userInfo)
             }
             .navigationBarTitle("Player rating")
+            .navigationBarTitleDisplayMode(.inline)
         }
         .onAppear(){
             self.firebaseManager.getUsersRatingList()

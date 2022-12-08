@@ -21,8 +21,10 @@ struct SettingsView: View {
                     }
                 }
             }
+            .navigationTitle("Settings")
+            .navigationBarTitleDisplayMode(.inline)
+            
         }
-        .navigationTitle("Settings")
         .onAppear(){
             settingsViewModel.createSettingsItems()
         }

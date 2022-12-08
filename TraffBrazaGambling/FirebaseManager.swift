@@ -54,7 +54,7 @@ class FirebaseManager: ObservableObject {
     }
     
     func createUserInfo(with userId: String, name: String) {
-        let userInfo = UserInfo(id: userId, name: name, balance: 2000)
+        let userInfo = UserInfo(id: userId, name: name, balance: 2000, gamesPlayed: 0, gamesWon: 0)
 
         updateUserInfo(userInfo: userInfo)
     }
@@ -88,6 +88,10 @@ class FirebaseManager: ObservableObject {
             
             self.users = usersDocuments.compactMap { (queryDocumentSnapshot) -> UserInfo? in
                 return try? queryDocumentSnapshot.data(as: UserInfo.self)
+            }
+            
+            self.users = self.users.sorted(){ rhs, lhs in
+                rhs.balance > lhs.balance
             }
         }
     }

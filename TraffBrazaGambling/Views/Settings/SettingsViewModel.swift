@@ -11,7 +11,7 @@ import SwiftUI
 
 class SettingsViewModel: ObservableObject {
     @Published var settingItems =  [[SettingsItemModel]] ()
-    private let firebaseManager = FirebaseManager.shared
+    let firebaseManager = FirebaseManager.shared
     
     func createSettingsItems(){
         if settingItems.isEmpty {
