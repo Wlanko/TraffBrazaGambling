@@ -23,7 +23,9 @@ struct GameBetPicker: View {
                     Button("ZERO") {
                         finalBet = BetModel(title: "ZERO", betNumbers: [0], winMultiplier: 50)
                     }
+                    .foregroundColor(.black)
                     .frame(width: 123, height: 40)
+                    .cornerRadius(10)
                     .background(Color.green)
                     .cornerRadius(5)
                     .padding(-3)
@@ -36,7 +38,9 @@ struct GameBetPicker: View {
                             Button(bet.title) {
                                 finalBet = bet
                             }
+                            .foregroundColor(.black)
                             .frame(width: 55, height: 82)
+                            .cornerRadius(10)
                             .rotationEffect(Angle(degrees: 90))
                             .background(Color.green)
                             .padding(-3)
@@ -47,7 +51,9 @@ struct GameBetPicker: View {
                             Button(bet.title) {
                                 finalBet = bet
                             }
+                            .foregroundColor(.black)
                             .frame(width: 55, height: 166)
+                            .cornerRadius(5)
                             .rotationEffect(Angle(degrees: 90))
                             .background(Color.green)
                             .padding(-3)
@@ -76,6 +82,7 @@ struct GameBetPicker: View {
                         Button(gameViewModel.bets[2][i-1].title) {
                             
                         }
+                        .foregroundColor(.black)
                         .frame(width: 40, height: 30)
                         .background(Color.green)
                         .cornerRadius(5)

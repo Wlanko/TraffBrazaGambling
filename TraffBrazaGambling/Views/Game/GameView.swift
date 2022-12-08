@@ -15,6 +15,7 @@ struct GameView: View {
     @State var finalBet: BetModel = BetModel(title: "title", betNumbers: [], betColor: .gray, winMultiplier: 0)
     
     @State var showBetAlert: Bool = false
+    @State var showBalanceAlert: Bool = false
     
     
     var body: some View {
@@ -22,7 +23,6 @@ struct GameView: View {
             GeometryReader() { geometry in
                 ScrollViewReader { scrollView in
                     VStack(alignment: .center){
-                        
                         PlayerRatingCell(userInfo: gameViewModel.userInfo)
                         
                         ScrollView(.horizontal, showsIndicators: false){
@@ -62,6 +62,8 @@ struct GameView: View {
                                             label: {
                                         Text("Bet: \(bet)")
                                     })
+                                    .background(Color(.systemGreen))
+                                    .cornerRadius(10)
                                     .labelsHidden()
                                     Text("\(bet)")
                                 }
@@ -86,6 +88,10 @@ struct GameView: View {
                                     gameViewModel.checkBet(number: random, bet: finalBet, sum: bet)
                                     bet = 0
                                 }
+                                .frame(width: 70, height: 40)
+                                .background(Color(.systemGreen))
+                                .cornerRadius(10)
+                                .foregroundColor(.black)
                                 .alert(isPresented: $showBetAlert) {
                                     Alert(title: Text("Ups"), message: Text("Plese make a bet"), dismissButton: .default(Text("Ok")))
                                 }
@@ -95,11 +101,9 @@ struct GameView: View {
                         }
                     }
                 }
-                .navigationTitle("Game")
-                .navigationBarTitleDisplayMode(.inline)
-                .frame(width: geometry.size.width)
                 
             }
+            .frame(height: 720)
             .onAppear(){
                 gameViewModel.getUserInfo()
             }

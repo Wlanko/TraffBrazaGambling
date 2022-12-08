@@ -21,6 +21,7 @@ struct SettingsView: View {
                     }
                 }
             }
+            .background(Color(.lightGray))
             .navigationTitle("Settings")
             .navigationBarTitleDisplayMode(.inline)
             

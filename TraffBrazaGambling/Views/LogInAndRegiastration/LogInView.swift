@@ -69,7 +69,6 @@ struct LogInView: View {
             .onTapGesture {
                 self.hideKeyboard()
             }
-            
         }
     }
     
