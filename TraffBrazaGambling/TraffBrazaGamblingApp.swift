@@ -24,12 +24,25 @@ struct TraffBrazaGamblingApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     var body: some Scene {
         WindowGroup {
-            if(Auth.auth().currentUser != nil) {
-                MainView()
-            } else {
-                LogInView()
-            }
-            //LogInView()
+//            if(firebaseManager.isLoggined) {
+//                MainView()
+//            } else {
+//                LogInView()
+//            }
+//            //LogInView()
+            AppView()
         }
+    }
+}
+
+struct AppView: View {
+    @ObservedObject var firebaseManager = FirebaseManager.shared
+    var body: some View {
+        if(firebaseManager.isLoggined) {
+            MainView()
+        } else {
+            LogInView()
+        }
+        //LogInView()
     }
 }

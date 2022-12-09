@@ -11,7 +11,6 @@ import SwiftUI
 
 class SettingsViewModel: ObservableObject {
     @Published var settingItems =  [SettingsSectionModel] ()
-    @State var popToMainView = false
     let firebaseManager = FirebaseManager.shared
     
     func createSettingsItems(){
@@ -30,11 +29,11 @@ class SettingsViewModel: ObservableObject {
             
             var secondSection = [SettingsItemModel]()
             secondSection.append(SettingsItemModel(id: "3", image: "rectangle.portrait.and.arrow.forward", name: "Log out") {
-                self.popToMainView = true
+                
+                
                 self.firebaseManager.logOut()
             })
             secondSection.append(SettingsItemModel(id: "4", image: "xmark.bin", name: "Delete account") {
-                self.popToMainView = true
                 self.firebaseManager.deleteAccount()
             })
             settingItems.append(SettingsSectionModel(itemModel: secondSection))

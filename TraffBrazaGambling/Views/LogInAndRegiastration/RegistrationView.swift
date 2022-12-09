@@ -24,7 +24,6 @@ struct RegistrationView: View {
     @FocusState private var focusedField: Field?
     
     @State private var showAlert: Bool = false
-    @State private var goToMainView: Bool = false
     @State private var alertMessage: String = ""
     
     var body: some View {
@@ -35,31 +34,28 @@ struct RegistrationView: View {
                 .focused($focusedField, equals: .email)
             TextFieldPattern(text: $password, topLabel: "Password", placeholderText: "Enter password", unremovablePrefix: "", needsSecurity: true)
                 .focused($focusedField, equals: .password)
-            TextFieldPattern(text: $confirmPassword, topLabel: "Confirm password", placeholderText: "Enter password", unremovablePrefix: "", needsSecurity: true)
+            TextFieldPattern(text: $confirmPassword, topLabel: "Confirm password", placeholderText: "Confirm password", unremovablePrefix: "", needsSecurity: true)
                 .focused($focusedField, equals: .confirmPassword)
             
-            NavigationLink(isActive: $goToMainView) { MainView()
-            } label: {
-                Button("Sign up") {
-                    registerButtonPressed(name: name, email: email, password: password, confirmPassword: confirmPassword)
-                }
-                .alert(isPresented: $showAlert){
-                    Alert(title: Text("Ups.."), message: Text(alertMessage), dismissButton: .default(Text("Ok")))
-                }
+            Button("Sign up") {
+                registerButtonPressed(name: name, email: email, password: password, confirmPassword: confirmPassword)
             }
-            .onSubmit {
-                switch focusedField {
-                case .name:
-                    focusedField = .email
-                case .email:
-                    focusedField = .password
-                case .password:
-                    focusedField = .confirmPassword
-                case .confirmPassword:
-                    registerButtonPressed(name: name, email: email, password: password, confirmPassword: confirmPassword)
-                default:
-                    print("Creating account…")
-                }
+            .alert(isPresented: $showAlert){
+                Alert(title: Text("Ups.."), message: Text(alertMessage), dismissButton: .default(Text("Ok")))
+            }
+        }
+        .onSubmit {
+            switch focusedField {
+            case .name:
+                focusedField = .email
+            case .email:
+                focusedField = .password
+            case .password:
+                focusedField = .confirmPassword
+            case .confirmPassword:
+                registerButtonPressed(name: name, email: email, password: password, confirmPassword: confirmPassword)
+            default:
+                print("Creating account…")
             }
         }
     }
@@ -75,7 +71,6 @@ struct RegistrationView: View {
             alertMessage = "Those passwords didn’t match. Try again."
         } else {
             firebaseManager.signUpWithEmailAndPassword(email: email, password: password, name: name)
-            goToMainView = true
         }
     }
 }

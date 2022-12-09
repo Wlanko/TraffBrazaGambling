@@ -20,9 +20,18 @@ class FirebaseManager: ObservableObject {
     
     private var dataBase = Firestore.firestore()
     @Published var users: [UserInfo] = []
+    @Published var isLoggined = false {
+        didSet {
+            self.objectWillChange.send()
+        }
+    }
     
     private init() {
-        //getUsersRatingList()
+        if(Auth.auth().currentUser != nil) {
+            isLoggined = true
+        } else {
+            isLoggined = false
+        }
     }
     
     func signUpAnonimously() {
@@ -34,6 +43,7 @@ class FirebaseManager: ObservableObject {
             }
             
             strongSelf.createUserInfo(with: user.uid, name: "Anonimous")
+            strongSelf.isLoggined = true
         }
     }
     
@@ -46,11 +56,13 @@ class FirebaseManager: ObservableObject {
             }
             
             strongSelf.createUserInfo(with: user.uid, name: name)
+            strongSelf.isLoggined = true
         }
     }
     
     func signInWithEmailAndPassword(email: String, password: String) {
         Auth.auth().signIn(withEmail: email, password: password)
+        isLoggined = true
     }
     
     func createUserInfo(with userId: String, name: String) {
@@ -99,6 +111,7 @@ class FirebaseManager: ObservableObject {
     func logOut() {
         do{
             try Auth.auth().signOut()
+            isLoggined = false
         } catch {
             print(error)
         }
@@ -116,6 +129,7 @@ class FirebaseManager: ObservableObject {
                 print(error)
             } else {
                 print("success")
+                self.isLoggined = false
             }
         }
     }

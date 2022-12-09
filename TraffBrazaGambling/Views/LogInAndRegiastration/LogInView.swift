@@ -17,7 +17,6 @@ struct LogInView: View {
     @State private var password: String = ""
     @State var showAlert: Bool = false
     @State var goToRegistrationView: Bool = false
-    @State var isLogined: Bool = false
     @FocusState private var focusedField: Field?
     private let firebaseManager = FirebaseManager.shared
     
@@ -31,17 +30,13 @@ struct LogInView: View {
                 TextFieldPattern(text: $password, topLabel: "Password", placeholderText: "Enter password", unremovablePrefix: "", needsSecurity: true)
                     .focused($focusedField, equals: .password)
                     
-                
-                NavigationLink(isActive: $isLogined) { MainView()
-                } label: {
-                    Button("Log In") {
-                        logInButtonPressed(email: email, password: password)
-                    }
-                    .font(.system(size: 18))
-                    .padding(5)
-                    .alert(isPresented: $showAlert) {
-                        Alert(title: Text("ups"), message: Text("Plese fill in all fields"), dismissButton: .default(Text("Ok")))
-                    }
+                Button("Log In") {
+                    logInButtonPressed(email: email, password: password)
+                }
+                .font(.system(size: 18))
+                .padding(5)
+                .alert(isPresented: $showAlert) {
+                    Alert(title: Text("ups"), message: Text("Plese fill in all fields"), dismissButton: .default(Text("Ok")))
                 }
                 
                 HStack {
@@ -52,13 +47,10 @@ struct LogInView: View {
                         }
                     }
                     Text("or continue")
-                    NavigationLink(isActive: $isLogined){
-                        MainView()
-                    } label: {
-                        Button("anonimously"){
-                            firebaseManager.signUpAnonimously()
-                            isLogined = true
-                        }
+                    
+                    Button("anonimously"){
+                        firebaseManager.signUpAnonimously()
+                        //isLogined = true
                     }
                 }
                 Spacer()
@@ -84,7 +76,7 @@ struct LogInView: View {
     func logInButtonPressed(email: String, password: String) {
         if !email.isEmpty && !password.isEmpty {
             firebaseManager.signInWithEmailAndPassword(email: email, password: password)
-            isLogined = true
+            //isLogined = true
         } else {
             showAlert = true
         }
