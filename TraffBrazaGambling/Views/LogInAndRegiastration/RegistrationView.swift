@@ -29,21 +29,17 @@ struct RegistrationView: View {
     
     var body: some View {
         VStack {
-            TextFieldPattern(text: $name, topLabel: "Name", placeholderText: "Enter your nickname", unremovablePrefix: "")
+            TextFieldPattern(text: $name, topLabel: "Name", placeholderText: "Enter your nickname", unremovablePrefix: "", needsSecurity: false)
                 .focused($focusedField, equals: .name)
-            TextFieldPattern(text: $email, topLabel: "Email", placeholderText: "Enter your email", unremovablePrefix: "")
+            TextFieldPattern(text: $email, topLabel: "Email", placeholderText: "Enter your email", unremovablePrefix: "", needsSecurity: false)
                 .focused($focusedField, equals: .email)
-            TextFieldPattern(text: $password, topLabel: "Password", placeholderText: "Enter password", unremovablePrefix: "")
+            TextFieldPattern(text: $password, topLabel: "Password", placeholderText: "Enter password", unremovablePrefix: "", needsSecurity: true)
                 .focused($focusedField, equals: .password)
-            TextFieldPattern(text: $confirmPassword, topLabel: "Confirm password", placeholderText: "Enter password", unremovablePrefix: "")
+            TextFieldPattern(text: $confirmPassword, topLabel: "Confirm password", placeholderText: "Enter password", unremovablePrefix: "", needsSecurity: true)
                 .focused($focusedField, equals: .confirmPassword)
             
-            NavigationLink(isActive: $goToMainView) { RegistrationView()
+            NavigationLink(isActive: $goToMainView) { MainView()
             } label: {
-                Button("Sign up") {
-                    registerButtonPressed(name: name, email: email, password: password, confirmPassword: confirmPassword)
-                }
-                
                 Button("Sign up") {
                     registerButtonPressed(name: name, email: email, password: password, confirmPassword: confirmPassword)
                 }
@@ -65,7 +61,6 @@ struct RegistrationView: View {
                     print("Creating account…")
                 }
             }
-            .offset(x: 0, y: -60)
         }
     }
     func registerButtonPressed(name: String, email: String, password: String, confirmPassword: String){

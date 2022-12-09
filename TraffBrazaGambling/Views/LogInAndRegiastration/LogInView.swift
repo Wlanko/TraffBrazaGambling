@@ -17,6 +17,7 @@ struct LogInView: View {
     @State private var password: String = ""
     @State var showAlert: Bool = false
     @State var goToRegistrationView: Bool = false
+    @State var isLogined: Bool = false
     @FocusState private var focusedField: Field?
     private let firebaseManager = FirebaseManager.shared
     
@@ -24,31 +25,39 @@ struct LogInView: View {
         NavigationStack {
             VStack{
                 Spacer()
-                TextFieldPattern(text: $email, topLabel: "Email", placeholderText: "Enter your email", unremovablePrefix: "")
+                TextFieldPattern(text: $email, topLabel: "Email", placeholderText: "Enter your email", unremovablePrefix: "", needsSecurity: false)
                     .focused($focusedField, equals: .email)
                 
-                TextFieldPattern(text: $password, topLabel: "Password", placeholderText: "Enter password", unremovablePrefix: "")
+                TextFieldPattern(text: $password, topLabel: "Password", placeholderText: "Enter password", unremovablePrefix: "", needsSecurity: true)
                     .focused($focusedField, equals: .password)
-                Button("Log In") {
-                    logInButtonPressed(email: email, password: password)
-                }
-                .font(.system(size: 18))
-                .padding(5)
-                .alert(isPresented: $showAlert) {
-                    Alert(title: Text("ups"), message: Text("Plese fill in all fields"), dismissButton: .default(Text("Ok")))
+                    
+                
+                NavigationLink(isActive: $isLogined) { MainView()
+                } label: {
+                    Button("Log In") {
+                        logInButtonPressed(email: email, password: password)
+                    }
+                    .font(.system(size: 18))
+                    .padding(5)
+                    .alert(isPresented: $showAlert) {
+                        Alert(title: Text("ups"), message: Text("Plese fill in all fields"), dismissButton: .default(Text("Ok")))
+                    }
                 }
                 
                 HStack {
                     NavigationLink(isActive: $goToRegistrationView) { RegistrationView()
                     } label: {
-                        Button("Sign Up") { goToRegistrationView = true }
+                        Button("Sign Up") {
+                            goToRegistrationView = true
+                        }
                     }
                     Text("or continue")
-                    NavigationLink(){
+                    NavigationLink(isActive: $isLogined){
                         MainView()
                     } label: {
                         Button("anonimously"){
                             firebaseManager.signUpAnonimously()
+                            isLogined = true
                         }
                     }
                 }
@@ -75,6 +84,7 @@ struct LogInView: View {
     func logInButtonPressed(email: String, password: String) {
         if !email.isEmpty && !password.isEmpty {
             firebaseManager.signInWithEmailAndPassword(email: email, password: password)
+            isLogined = true
         } else {
             showAlert = true
         }

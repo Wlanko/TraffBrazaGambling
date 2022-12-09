@@ -9,13 +9,14 @@ import SwiftUI
 
 struct SettingsView: View {
     @ObservedObject private var settingsViewModel = SettingsViewModel()
+    private var count = 0
     
     var body: some View {
         NavigationView {
             List{
-                ForEach(settingsViewModel.settingItems, id: \.count) { section in
+                ForEach(settingsViewModel.settingItems) { section in
                     Section{
-                        ForEach(section) { item in
+                        ForEach(section.itemModel) { item in
                             SettingsItemCell(item: item)
                         }
                     }
@@ -25,6 +26,7 @@ struct SettingsView: View {
             .navigationTitle("Settings")
             .navigationBarTitleDisplayMode(.inline)
             
+//            NavigationLink(destination: LogInView(), isActive: $settingsViewModel.popToMainView, label: {EmptyView()})
         }
         .onAppear(){
             settingsViewModel.createSettingsItems()

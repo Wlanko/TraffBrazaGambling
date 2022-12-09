@@ -12,7 +12,7 @@ struct GameView: View {
     @State var xOffset: CGFloat = 0
     @State var bet: Int = 0
     @State var range = 1...3
-    @State var finalBet: BetModel = BetModel(title: "title", betNumbers: [], betColor: .gray, winMultiplier: 0)
+    @State var finalBet: BetModel = BetModel(title: "", betNumbers: [], betColor: .gray, winMultiplier: 0)
     
     @State var showBetAlert: Bool = false
     @State var showBalanceAlert: Bool = false
@@ -70,6 +70,10 @@ struct GameView: View {
                                 
                                 Spacer()
                                 
+                                Text("You have bet on: \(finalBet.title)")
+                                
+                                Spacer()
+                                
                                 Button("Spin") {
                                     if(finalBet.betNumbers.isEmpty && finalBet.betColor == .gray || bet == 0) {
                                         showBetAlert = true
@@ -87,6 +91,10 @@ struct GameView: View {
                                     
                                     gameViewModel.checkBet(number: random, bet: finalBet, sum: bet)
                                     bet = 0
+                                    
+                                    DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+                                        self.finalBet = BetModel(title: "", betNumbers: [], betColor: .gray, winMultiplier: 0)
+                                    }
                                 }
                                 .frame(width: 70, height: 40)
                                 .background(Color(.systemGreen))

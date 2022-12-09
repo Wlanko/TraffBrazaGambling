@@ -15,3 +15,8 @@ struct SettingsItemModel: Identifiable {
     
     let chevronimage = "chevron.right"
 }
+
+struct SettingsSectionModel: Identifiable {
+    let id = UUID().uuidString
+    var itemModel: [SettingsItemModel]
+}

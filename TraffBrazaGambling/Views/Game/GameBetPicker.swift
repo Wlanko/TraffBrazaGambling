@@ -66,7 +66,7 @@ struct GameBetPicker: View {
                                     RouletteItemPattern(item: item, frameSize: 40)
                                         .padding(-3)
                                         .onTapGesture{
-                                            finalBet = BetModel(title: "Number", betNumbers: [item.number], winMultiplier: 35)
+                                            finalBet = BetModel(title: "\(item.number)", betNumbers: [item.number], winMultiplier: 35)
                                         }
                                 }
                             }
@@ -80,7 +80,7 @@ struct GameBetPicker: View {
                     Spacer()
                     ForEach(range, id: \.self) { i in
                         Button(gameViewModel.bets[2][i-1].title) {
-                            
+                            finalBet = BetModel(title: "\(gameViewModel.bets[2][i-1].title) \(i)", betNumbers:  gameViewModel.bets[2][i-1].betNumbers, winMultiplier: gameViewModel.bets[2][i-1].winMultiplier)
                         }
                         .foregroundColor(.black)
                         .frame(width: 40, height: 30)

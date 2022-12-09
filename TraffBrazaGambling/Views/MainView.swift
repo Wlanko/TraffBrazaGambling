@@ -25,6 +25,7 @@ struct MainView: View {
                     Label("Settings", systemImage: "gearshape")
                 }
         }
+        .navigationBarBackButtonHidden(true)
         .onAppear(){
             firebaseManager.getUsersRatingList()
         }
